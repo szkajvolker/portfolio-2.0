@@ -1,0 +1,83 @@
+import { discordBlack } from "../assets";
+
+export const navLists = [
+  { id: "0", title: "Home", url: "#home" },
+  { id: "1", title: "About", url: "#about" },
+  { id: "2", title: "Skills", url: "#skills" },
+  { id: "3", title: "Projects", url: "#projects" },
+  { id: "4", title: "Contact", url: "#contact" },
+];
+
+export const aboutMe =
+  "My name is Istvan Szabo I am a frontend developer. A bit about me: after highscool I explored different carrer paths in various jobs. In 2019, I moved to Northern Ireland to work. After spending several years in factories, I decided to pursue something I truly enjoy - frontend development. I enrolled in the Codecool bootcamp, where I gained a solid foundation in Javascript,CSS and HTML.I really enjoy programming and constantly challenging myself to grow. In my freetime I like playing videogames, watching TV series and as a hobby, I am also passionate about game development.I am currently following a course in Unreal Engine 5, hoping that one day I can create my own indie game (or at least build one for myself)";
+
+export const icons = {
+  html: "code",
+  css: "palette",
+  javascript: "javascript",
+  react: "science",
+  express: "cloud",
+  node: "developer_mode",
+  git: "source",
+  postman: "api",
+  teamwork: "group",
+  cleanCode: "auto_fix_high",
+  problemSolving: "psychology",
+  selfLearning: "school",
+  responsive: "devices",
+};
+
+export const hardSkills = [
+  { id: "html", name: "HTML", percentage: 85 },
+  { id: "css", name: "CSS", percentage: 75 },
+  { id: "javascript", name: "JavaScript", percentage: 90 },
+  { id: "react", name: "React", percentage: 80 },
+  { id: "express", name: "Express.js", percentage: 40 },
+  { id: "node", name: "Node.js", percentage: 85 },
+  { id: "git", name: "Git & GitHub", percentage: 85 },
+  { id: "postman", name: "Postman", percentage: 65 },
+];
+
+export const softSkills = [
+  { id: "teamwork", name: "Teamwork", percentage: 90 },
+  { id: "cleanCode", name: "Clean Code", percentage: 87 },
+  { id: "problemSolving", name: "Problem Solving", percentage: 85 },
+  { id: "selfLearning", name: "Self-Learning", percentage: 95 },
+  { id: "responsive", name: "Responsive Design", percentage: 88 },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Brainwave",
+    description: "React",
+    repo: "https://szkajvolker.github.io/Brainwave/",
+    status: true,
+    percent: 70,
+  },
+  {
+    id: 2,
+    title: "Apple website",
+    description: "Apple inspired webpage using react + gsap and three.js",
+    repo: "https://szkajvolker.github.io/AppleWebsitePractice/",
+    status: true,
+    percent: 70,
+  },
+  {
+    id: 3,
+    title: "UI halftime exam",
+    description: "Basic Feedback Form",
+    repo: "https://szkajvolker.github.io/halftime-exam-uibuild/",
+    status: true,
+    percent: 70,
+  },
+];
+
+export const navIcons = [
+  {
+    id: "0",
+    title: "Discord",
+    iconUrl: discordBlack,
+    url: "#",
+  },
+];
