@@ -24,12 +24,13 @@ function Skills() {
           duration: 1,
           scrollTrigger: {
             trigger: hardSkillsRef.current,
-            start: "top 80%",
+            start: "top 90%",
             toggleActions: "play none none reverse",
           },
         }
       );
     }
+
     if (softSkillsRef.current) {
       gsap.fromTo(
         softSkillsRef.current,
@@ -40,7 +41,8 @@ function Skills() {
           duration: 1,
           scrollTrigger: {
             trigger: softSkillsRef.current,
-            start: "top 80%",
+            start: "top 90%",
+            toggleActions: "play none none reverse",
           },
         }
       );
@@ -80,7 +82,7 @@ function Skills() {
   }, []);
 
   return (
-    <Section className="-mt-[6.25rem]" crosses crossesOffset custompaddings crossesSide id="skills">
+    <Section className="-mt-[6.25rem]" id="skills">
       <div className="flex flex-col lg:flex-row justify-between ml-[4rem] mr-[4rem] pt-[5rem] mt-[5rem]">
         <div
           ref={hardSkillsRef}

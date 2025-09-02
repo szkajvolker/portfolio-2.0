@@ -6,14 +6,7 @@ import { GlowingEffect } from "./ui/glowingeffect";
 
 function Projects() {
   return (
-    <Section
-      className="-mt-[6.25rem]"
-      crosses
-      crossesOffset
-      custompaddings
-      crossesSide
-      id="projects"
-    >
+    <Section className="-mt-[6.25rem]" crossesOffset custompaddings id="projects">
       <div className="rounded-xl shadow-lg p-6 flex justify-center items-center max-w-2xl gap-8 mx-auto">
         <div className=" rounded-xl shadow-lg p-6 justify-center font-bold">
           <div className="border-2 border-color-1 text-color-3 flex flex-col items-center rounded-[10rem] mb-6">

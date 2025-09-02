@@ -12,14 +12,7 @@ function Home() {
   });
 
   return (
-    <Section
-      className="pt-[12rem] -mt-[5.25rem]"
-      crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPadding
-      crossesSide
-      id="home"
-    >
+    <Section className="pt-[12rem] -mt-[5.25rem]" id="home">
       <div className="container mt-[5rem] mb-[15rem]" ref={parallaxRef}>
         <BackgroundBeamsWithCollision className="bg-n-8 h-full">
           <div className=" relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] lg:mt-[6rem]">

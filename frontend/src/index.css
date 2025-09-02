@@ -20,5 +20,10 @@
 @layer base {
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
 }

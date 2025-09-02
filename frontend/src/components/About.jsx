@@ -45,7 +45,7 @@ function About() {
   }, []);
 
   return (
-    <Section className="-mt-[6.25rem]" crosses crossesOffset custompaddings crossesSide id="about">
+    <Section className="-mt-[6.25rem]" id="about">
       <div className="container flex flex-col md:flex-row items-center justify-center gap-10">
         <img
           id="picture"

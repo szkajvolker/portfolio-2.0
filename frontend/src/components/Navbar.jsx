@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
+import logoIcon from "../assets/images/logoIcon.jpg";
 
 const Navbar = () => {
   const pathName = useLocation();
@@ -34,10 +35,16 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between w-full px-10">
         <a className="block" href="#hero">
-          <img src={null} alt="icon" width={32} height={32} />
+          <img
+            src={logoIcon}
+            alt="icon"
+            width={60}
+            height={60}
+            className="rounded-xl hover:brightness-150"
+          />
         </a>
         <nav
-          className={`fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:flex-1 justify-center lg:bg-transparent ${
+          className={`fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:flex-1 lg-mx-auto justify-center lg:bg-transparent ${
             openNavigation ? "flex" : "hidden"
           }`}
         >
