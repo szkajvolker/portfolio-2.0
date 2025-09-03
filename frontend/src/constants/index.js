@@ -1,4 +1,3 @@
-import { href } from "react-router-dom";
 import { discordBlack } from "../assets";
 
 export const navLists = [
