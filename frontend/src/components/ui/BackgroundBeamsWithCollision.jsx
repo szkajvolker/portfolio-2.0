@@ -3,7 +3,7 @@ import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 import React, { useRef, useState, useEffect } from "react";
 
-export const BackgroundBeamsWithCollision = ({ children, className }) => {
+export const BackgroundBeamsWithCollision = ({ children, className }, collision) => {
   const containerRef = useRef(null);
   const parentRef = useRef(null);
 
@@ -75,6 +75,7 @@ export const BackgroundBeamsWithCollision = ({ children, className }) => {
           beamOptions={beam}
           containerRef={containerRef}
           parentRef={parentRef}
+          collision={collision}
         />
       ))}
       {children}
@@ -177,7 +178,20 @@ const CollisionMechanism = React.forwardRef(
             beamOptions.className
           )}
         />
-        <AnimatePresence></AnimatePresence>
+
+        <AnimatePresence>
+          {collision === "true" && collision.detected && collision.coordinates && (
+            <Explosion
+              key={`${collision.coordinates.x}-${collision.coordinates.y}`}
+              className=""
+              style={{
+                left: `${collision.coordinates.x}px`,
+                top: `${collision.coordinates.y}px`,
+                transform: "translate(-50%, -50%)",
+              }}
+            />
+          )}
+        </AnimatePresence>
       </>
     );
   }

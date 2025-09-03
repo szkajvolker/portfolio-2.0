@@ -33,7 +33,7 @@ const Navbar = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdropblur-sm"
       }`}
     >
-      <div className="flex items-center justify-between w-full px-10">
+      <div className="flex items-center justify-between max-w-screen lg:px-5">
         <a className="block" href="#hero">
           <img
             src={logoIcon}
@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
+        <Button className="lg:hidden flex-end" onClick={toggleNavigation}>
           <MenuSvg></MenuSvg>
         </Button>
       </div>

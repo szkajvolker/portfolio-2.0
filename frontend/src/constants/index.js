@@ -1,3 +1,4 @@
+import { href } from "react-router-dom";
 import { discordBlack } from "../assets";
 
 export const navLists = [
@@ -79,5 +80,23 @@ export const navIcons = [
     title: "Discord",
     iconUrl: discordBlack,
     url: "#",
+  },
+];
+
+export const contactIcons = [
+  {
+    id: 1,
+    title: "LinkedIn",
+    url: "https://linkedin.com/in/istv%C3%A1n-szab%C3%B3-93985a374/",
+  },
+  {
+    id: 2,
+    title: "GitHub",
+    url: "https://github.com/szkajvolker",
+  },
+  {
+    id: 3,
+    title: "Email",
+    url: "mailto:ist9595@windowslive.com",
   },
 ];

@@ -45,24 +45,28 @@ function About() {
   }, []);
 
   return (
-    <Section className="-mt-[6.25rem]" id="about">
-      <div className="container flex flex-col md:flex-row items-center justify-center gap-10">
-        <img
-          id="picture"
-          src={profile2}
-          className="max-w-xl  w-[250px] lg:w-[320px] rounded-xl  mx-auto mb-8 mt-8"
-          alt="profilepic"
-          ref={pictureRef}
-        />
-        <div ref={textRef}>
-          <div className="border-2 border-n-6 shadow-xl animate-shadow-pulse">
-            <p
-              className="text-lg md:text-xl lg:text-2xl text-n-3 bg-n-8 p-6 leading-relaxed font-code"
-              id="text"
-            >
-              {aboutMe}
-            </p>
-          </div>
+    <Section className="" id="about">
+      <div className="flex flex-col lg:flex-row w-full items-center justify-center  px-10 mt-20 pt-2">
+        <div className="max-w-xs ml-[2rem] mr-[2rem]">
+          <img
+            id="picture"
+            src={profile2}
+            className="rounded-xl"
+            alt="profilepic"
+            ref={pictureRef}
+          />
+        </div>
+
+        <div
+          className="border-2 border-n-6 shadow-xl animate-shadow-pulse lg:p-2 lg:max-w-2xl max-w-xs w-full ml-[4rem] mr-[4rem] mt-[4rem]"
+          ref={textRef}
+        >
+          <p
+            className="text-lg md:text-xl lg:text-2xl text-n-3 bg-n-8 p-6 leading-relaxed font-code"
+            id="text"
+          >
+            {aboutMe}
+          </p>
         </div>
       </div>
     </Section>

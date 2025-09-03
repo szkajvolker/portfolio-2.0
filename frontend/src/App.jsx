@@ -11,8 +11,8 @@ import { TracingBeam } from "./components/ui/TracingBeam";
 function App() {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem]">
-        <TracingBeam className="w-full">
+      <TracingBeam className="mt-[-5rem]">
+        <div className="lg:pt-[5.25rem]">
           <Navbar />
           <Home />
           <About />
@@ -20,8 +20,8 @@ function App() {
           <Projects />
           <Contact />
           <Footer />
-        </TracingBeam>
-      </div>
+        </div>
+      </TracingBeam>
     </>
   );
 }

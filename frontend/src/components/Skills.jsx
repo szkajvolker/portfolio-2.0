@@ -82,11 +82,11 @@ function Skills() {
   }, []);
 
   return (
-    <Section className="-mt-[6.25rem]" id="skills">
-      <div className="flex flex-col lg:flex-row justify-between ml-[4rem] mr-[4rem] pt-[5rem] mt-[5rem]">
+    <Section className="" id="skills">
+      <div className="flex flex-col lg:flex-row justify-between px-10 mt-20 pt-20">
         <div
           ref={hardSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl lg:h-[350px]"
+          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full"
         >
           <h2 className="text-color-3 text-xl sm:text-2xl font-bold text-center mb-6">
             Hard skills
