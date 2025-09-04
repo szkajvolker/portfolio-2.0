@@ -50,10 +50,9 @@ export const projects = [
   {
     id: 1,
     title: "Brainwave",
-    description: "React",
+    description: "React practicing,learning new skills,different solutions",
     repo: "https://szkajvolker.github.io/Brainwave/",
     status: true,
-    percent: 70,
   },
   {
     id: 2,
@@ -61,15 +60,20 @@ export const projects = [
     description: "Apple inspired webpage using react + gsap and three.js",
     repo: "https://szkajvolker.github.io/AppleWebsitePractice/",
     status: true,
-    percent: 70,
   },
   {
     id: 3,
     title: "UI halftime exam",
-    description: "Basic Feedback Form",
+    description: "Basic Feedback Form, this was my half time exam UI task",
     repo: "https://szkajvolker.github.io/halftime-exam-uibuild/",
     status: true,
-    percent: 70,
+  },
+  {
+    id: 3,
+    title: "Cocktail website",
+    description: "A cocktail site using react as framework, practicing gsap",
+    repo: "https://szkajvolker.github.io/gsap_cocktails/",
+    status: true,
   },
 ];
 
