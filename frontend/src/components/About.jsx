@@ -45,8 +45,8 @@ function About() {
   }, []);
 
   return (
-    <Section className="" id="about">
-      <div className="flex flex-col lg:flex-row w-full items-center justify-center  px-10 mt-20 pt-2">
+    <Section id="about">
+      <div className="flex flex-col lg:flex-row w-full items-center justify-center  px-10 mt-5 pt-2">
         <div className="max-w-xs ml-[2rem] mr-[2rem]">
           <img
             id="picture"

@@ -82,13 +82,13 @@ function Skills() {
   }, []);
 
   return (
-    <Section className="" id="skills">
-      <div className="flex flex-col lg:flex-row justify-between px-10 mt-20 pt-20">
+    <Section className="lg:h-[1000px] justify-center items-center mb-[5rem]" id="skills">
+      <div className="flex flex-col lg:flex-row justify-between px-10 mt-5 mb-10 pt-10 lg:translate-y-[10rem] gap-10">
         <div
           ref={hardSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full"
+          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] lg:p-[2rem] w-full max-w-2xl h-full"
         >
-          <h2 className="text-color-3 text-xl sm:text-2xl font-bold text-center mb-6">
+          <h2 className="text-color-3 text-xl sm:text-2xl font-code text-center mb-6">
             Hard skills
           </h2>
           <div className="text-color-3 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
@@ -104,7 +104,7 @@ function Skills() {
                     ></div>
                   </div>
                 </div>
-                <span className="ml-7 text-left">{skill.name}</span>
+                <span className="ml-7 text-left font-code">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -112,15 +112,15 @@ function Skills() {
 
         <div
           ref={softSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] mt-[5rem] mb-[6rem] w-full max-w-2xl lg:h-[350px]"
+          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full"
         >
-          <h2 className="text-color-6 text-xl sm:text-2xl font-bold text-center mb-6">
+          <h2 className="text-color-6 text-xl sm:text-2xl font-code text-center mb-6">
             Soft skills
           </h2>
           <div className="text-color-6 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
             {softSkills.map((skill, i) => (
-              <div key={skill.id} className="flex flex-col gap-3">
-                <div className="flex flex-row gap-2">
+              <div key={skill.id} className="flex flex-col">
+                <div className="flex flex-row items-center">
                   <span className="material-symbols-outlined text-xl">{icons[skill.id]}</span>
                   <div className="border-4 border-n-6 w-full h-5 rounded-lg overflow-hidden bg-black/20">
                     <div
@@ -130,7 +130,7 @@ function Skills() {
                     ></div>
                   </div>
                 </div>
-                <span className="ml-7 text-left">{skill.name}</span>
+                <span className="ml-7 text-left font-code">{skill.name}</span>
               </div>
             ))}
           </div>
