@@ -75,7 +75,7 @@ const Navbar = () => {
                 alt={icon.iconUrl}
                 width={32}
                 height={32}
-                className="hover:brightness-150 cursor-pointer"
+                className="hover:brightness-150 cursor-pointer hidden"
               />
             </div>
           ))}
