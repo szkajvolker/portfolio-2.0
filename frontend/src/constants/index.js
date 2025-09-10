@@ -58,7 +58,7 @@ export const projects = [
     id: 2,
     title: "Apple website",
     description: "Apple inspired webpage using react + gsap and three.js",
-    repo: "https://szkajvolker.github.io/AppleWebsitePractice/",
+    repo: "https://demo-site-istvan-001.netlify.app/",
     status: true,
   },
   {
