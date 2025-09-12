@@ -75,6 +75,14 @@ export const projects = [
     repo: "https://szkajvolker.github.io/gsap_cocktails/",
     status: true,
   },
+  {
+    id: 3,
+    title: "Movie App",
+    description:
+      "A Movie App using TMDB as background database, features:searchBar,modal,trending movies based on search,using Appwrite as database",
+    repo: "https://movie-app-szi-5c29f5.netlify.app/",
+    status: true,
+  },
 ];
 
 export const navIcons = [
