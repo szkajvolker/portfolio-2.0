@@ -88,23 +88,27 @@ function Skills() {
           ref={hardSkillsRef}
           className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] lg:p-[2rem] w-full max-w-2xl h-full"
         >
-          <h2 className="text-color-3 text-xl sm:text-2xl font-code text-center mb-6">
+          <h2 className="text-blue-300 text-xl sm:text-2xl font-code text-center mb-6">
             Hard skills
           </h2>
-          <div className="text-color-3 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
+          <div className="text-blue-300 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
             {hardSkills.map((skill, i) => (
-              <div key={skill.id} className="flex flex-col">
+              <div key={i} className="flex flex-col">
                 <div className="flex flex-row items-center">
-                  <span className="material-symbols-outlined text-xl">{icons[skill.id]}</span>
+                  <img
+                    src={icons[skill.id]}
+                    alt={skill.name}
+                    className="w-8 h-8 mr-2 bg-gray-600 p-1 rounded-xl"
+                  />
                   <div className="border-4 border-n-6 w-full h-5 rounded-lg overflow-hidden bg-black/20">
                     <div
                       ref={(el) => (skillsRef.current[i] = el)}
-                      className="h-full bg-color-3 transition-all duration-2000 ease-out"
+                      className="h-full bg-blue-300 transition-all duration-2000 ease-out"
                       style={{ width: "0%" }}
                     ></div>
                   </div>
                 </div>
-                <span className="ml-7 text-left font-code">{skill.name}</span>
+                <span className="text-center font-code">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -119,9 +123,11 @@ function Skills() {
           </h2>
           <div className="text-color-6 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
             {softSkills.map((skill, i) => (
-              <div key={skill.id} className="flex flex-col">
+              <div key={i} className="flex flex-col">
                 <div className="flex flex-row items-center">
-                  <span className="material-symbols-outlined text-xl">{icons[skill.id]}</span>
+                  <span className="material-symbols-outlined text-xl w-8 h-8 bg-gray-600 p-1 rounded-xl">
+                    {icons[skill.id]}
+                  </span>
                   <div className="border-4 border-n-6 w-full h-5 rounded-lg overflow-hidden bg-black/20">
                     <div
                       ref={(el) => (skillsRef.current[hardSkills.length + i] = el)}
@@ -130,7 +136,7 @@ function Skills() {
                     ></div>
                   </div>
                 </div>
-                <span className="ml-7 text-left font-code">{skill.name}</span>
+                <span className="text-center font-code">{skill.name}</span>
               </div>
             ))}
           </div>

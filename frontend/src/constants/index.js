@@ -1,4 +1,22 @@
-import { discordBlack } from "../assets";
+import {
+  discordBlack,
+  html,
+  css,
+  expressDark,
+  expressLight,
+  git,
+  gitHubDark,
+  gitHubLight,
+  js,
+  mongodb,
+  netlify,
+  nodejs,
+  postman,
+  reactDark,
+  reactLight,
+  tw,
+  ts,
+} from "../assets";
 
 export const navLists = [
   { id: "0", title: "Home", url: "#home" },
@@ -12,14 +30,22 @@ export const aboutMe =
   "My name is Istvan Szabo I am a frontend developer. A bit about me: after highscool I explored different carrer paths in various jobs. In 2019, I moved to Northern Ireland to work. After spending several years in factories, I decided to pursue something I truly enjoy - frontend development. I enrolled in the Codecool bootcamp, where I gained a solid foundation in Javascript,CSS and HTML.I really enjoy programming and constantly challenging myself to grow. In my freetime I like playing videogames, watching TV series and as a hobby, I am also passionate about game development.I am currently following a course in Unreal Engine 5, hoping that one day I can create my own indie game (or at least build one for myself)";
 
 export const icons = {
-  html: "code",
-  css: "palette",
-  javascript: "javascript",
-  react: "science",
-  express: "cloud",
-  node: "developer_mode",
-  git: "source",
-  postman: "api",
+  html,
+  css,
+  js,
+  tw,
+  ts,
+  reactLight,
+  reactDark,
+  expressLight,
+  expressDark,
+  nodejs,
+  mongodb,
+  git,
+  gitHubLight,
+  gitHubDark,
+  netlify,
+  postman,
   teamwork: "group",
   cleanCode: "auto_fix_high",
   problemSolving: "psychology",
@@ -28,14 +54,19 @@ export const icons = {
 };
 
 export const hardSkills = [
+  { id: "js", name: "JavaScript", percentage: 90 },
   { id: "html", name: "HTML", percentage: 85 },
   { id: "css", name: "CSS", percentage: 75 },
-  { id: "javascript", name: "JavaScript", percentage: 90 },
-  { id: "react", name: "React", percentage: 80 },
-  { id: "express", name: "Express.js", percentage: 40 },
-  { id: "node", name: "Node.js", percentage: 85 },
-  { id: "git", name: "Git & GitHub", percentage: 85 },
+  { id: "mongodb", name: "Mongodb", percentage: 35 },
+  { id: "expressDark", name: "Express.js", percentage: 40 },
+  { id: "reactDark", name: "React", percentage: 80 },
+  { id: "nodejs", name: "Node.js", percentage: 85 },
+  { id: "git", name: "Git", percentage: 75 },
+  { id: "gitHubDark", name: "GitHub", percentage: 85 },
   { id: "postman", name: "Postman", percentage: 65 },
+  { id: "tw", name: "Tailwind", percentage: 65 },
+  { id: "ts", name: "Typescript", percentage: 20 },
+  { id: "netlify", name: "Netlify", percentage: 35 },
 ];
 
 export const softSkills = [
@@ -69,14 +100,14 @@ export const projects = [
     status: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Cocktail website",
     description: "A cocktail site using react as framework, practicing gsap",
     repo: "https://szkajvolker.github.io/gsap_cocktails/",
     status: true,
   },
   {
-    id: 3,
+    id: 5,
     title: "Movie App",
     description:
       "A Movie App using TMDB as background database, features:searchBar,modal,trending movies based on search,using Appwrite as database",
