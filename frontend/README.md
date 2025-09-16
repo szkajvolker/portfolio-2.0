@@ -1,12 +1,95 @@
-# React + Vite
+# 🚀 Portfolio 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated, and fully responsive developer portfolio built with React, Vite, Tailwind CSS, and GSAP. Showcases my skills, projects, and contact info with beautiful UI and smooth interactions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Animated hero section with GSAP and custom emoji wave
+- Responsive layout for all devices
+- Sticky/fixed navbar
+- Animated skill bars
+- Project showcase with live links
+- Contact section with social icons
+- Custom SVG assets and icons
+- Dark glassmorphism backgrounds
+- Smooth section transitions
+- Deployed to GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React** (functional components, hooks)
+- **Vite** (blazing fast dev/build)
+- **Tailwind CSS** (utility-first styling, custom animations)
+- **GSAP** (scroll & element animations)
+- **SVG Assets** (custom icons)
+- **GitHub Pages** (deployment)
+
+---
+
+## ⚡ Installation
+
+```bash
+# Clone the repo
+ git clone https://github.com/szkajvolker/portfolio-2.0.git
+
+# Go to project folder
+cd portfolio1.0/frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 🌐 Live Demo
+
+[View Portfolio Live](https://szkajvolker.github.io/portfolio-2.0/)
+
+---
+
+## 📁 Folder Structure
+
+```
+frontend/
+  ├── public/
+  ├── src/
+  │   ├── assets/
+  │   ├── components/
+  │   ├── constants/
+  │   ├── App.jsx
+  │   └── ...
+  ├── tailwind.config.js
+  ├── vite.config.js
+  └── ...
+```
+
+---
+
+## 🙋‍♂️ About Me
+
+My name is Istvan Szabo, a passionate frontend developer. I love building beautiful, interactive web experiences and constantly learning new technologies. Check out my projects and feel free to connect!
+
+---
+
+## 📬 Contact
+
+- [LinkedIn](https://linkedin.com/in/istv%C3%A1n-szab%C3%B3-93985a374/)
+- [GitHub](https://github.com/szkajvolker)
+- Email: ist9595@windowslive.com
+
+---
+
+## ⭐️ Like this project?
+
+Star it on GitHub and share it with others!
+
+---
+
+> Designed & built with ❤️ by Istvan Szabo
