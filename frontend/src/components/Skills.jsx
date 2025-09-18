@@ -94,6 +94,7 @@ function Skills() {
           <div className="text-blue-300 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
             {hardSkills.map((skill, i) => (
               <div key={i} className="flex flex-col">
+                <span className="text-center font-code">{skill.name}</span>
                 <div className="flex flex-row items-center">
                   <img
                     src={icons[skill.id]}
@@ -108,7 +109,6 @@ function Skills() {
                     ></div>
                   </div>
                 </div>
-                <span className="text-center font-code">{skill.name}</span>
               </div>
             ))}
           </div>
@@ -124,8 +124,9 @@ function Skills() {
           <div className="text-color-6 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
             {softSkills.map((skill, i) => (
               <div key={i} className="flex flex-col">
+                <span className="text-center font-code">{skill.name}</span>
                 <div className="flex flex-row items-center">
-                  <span className="material-symbols-outlined text-xl w-8 h-8 bg-gray-600 p-1 rounded-xl">
+                  <span className="material-symbols-outlined text-xl w-8 h-8 mr-2 bg-gray-600 p-1 rounded-xl">
                     {icons[skill.id]}
                   </span>
                   <div className="border-4 border-n-6 w-full h-5 rounded-lg overflow-hidden bg-black/20">
