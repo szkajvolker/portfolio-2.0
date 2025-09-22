@@ -20,12 +20,14 @@ export const TracingBeam = ({ children, className }) => {
   }, []);
 
   const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]), {
-    stiffness: 500,
-    damping: 90,
+    stiffness: 160,
+    damping: 45,
+    restSpeed: 0.1,
   });
   const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]), {
-    stiffness: 500,
-    damping: 90,
+    stiffness: 160,
+    damping: 45,
+    restSpeed: 0.1,
   });
 
   return (

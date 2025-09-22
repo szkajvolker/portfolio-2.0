@@ -1,6 +1,5 @@
 import profile2 from "../assets/images/profile2.jpg";
 import { aboutMe } from "../constants";
-import Section from "./Section";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";

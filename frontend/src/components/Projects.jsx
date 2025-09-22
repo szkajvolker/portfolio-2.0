@@ -1,12 +1,11 @@
 import { projects } from "../constants";
 import { MdCode } from "react-icons/md";
-import Section from "./Section";
 import Button from "./Button";
 
 function Projects() {
   return (
-    <div className="min-h-screen" id="projects">
-      <div className="rounded-xl shadow-lg p-6 flex flex-col justify-center items-center max-w-3xl gap-8 mx-auto mb-10">
+    <div className="min-h-screen px-4" id="projects">
+      <div className="rounded-xl shadow-lg flex flex-col justify-center items-center mx-auto mb-10 max-w-md lg:max-w-4xl">
         <div className="rounded-xl shadow-lg p-6 justify-center font-bold w-full">
           <div className="border-2 border-color-1 text-color-3 flex flex-col items-center rounded-[10rem] mb-6">
             <h2 className="text-2xl">Projects</h2>
@@ -14,7 +13,7 @@ function Projects() {
           </div>
         </div>
 
-        <ul className="flex flex-col lg:grid lg:grid-cols-2 lg:w-full gap-3">
+        <ul className="flex flex-col lg:grid lg:grid-cols-2 w-full gap-3 px-2">
           {projects.map((p) => (
             <li key={p.id} className="bg-n-6 rounded-lg p-4 shadow hover:shadow-white/60">
               <div className="flex flex-col items-center">

@@ -4,7 +4,6 @@ import { hardSkills } from "../constants";
 import { icons } from "../constants";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
-import Section from "./Section";
 
 gsap.registerPlugin(ScrollTrigger);
 
