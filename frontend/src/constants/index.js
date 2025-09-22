@@ -114,6 +114,14 @@ export const projects = [
     repo: "https://movie-app-szi-5c29f5.netlify.app/",
     status: true,
   },
+  {
+    id: 6,
+    title: "Games App",
+    description:
+      "A Games App using RAWG as background database, features:searchBar,modal,gamecards with their details",
+    repo: "work in progress",
+    status: false,
+  },
 ];
 
 export const navIcons = [

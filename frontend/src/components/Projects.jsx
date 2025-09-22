@@ -5,7 +5,7 @@ import Button from "./Button";
 
 function Projects() {
   return (
-    <Section crossesOffset custompaddings id="projects">
+    <div className="min-h-screen" id="projects">
       <div className="rounded-xl shadow-lg p-6 flex flex-col justify-center items-center max-w-3xl gap-8 mx-auto mb-10">
         <div className="rounded-xl shadow-lg p-6 justify-center font-bold w-full">
           <div className="border-2 border-color-1 text-color-3 flex flex-col items-center rounded-[10rem] mb-6">
@@ -18,7 +18,7 @@ function Projects() {
           {projects.map((p) => (
             <li key={p.id} className="bg-n-6 rounded-lg p-4 shadow hover:shadow-white/60">
               <div className="flex flex-col items-center">
-                <h3>{p.title}</h3> <span>Desctiption: {p.description}</span>
+                <h3>{p.title}</h3> <span>Description: {p.description}</span>
               </div>
               <div className="flex justify-end gap-2 mt-2">
                 <span>Status: {p.status}</span>
@@ -28,9 +28,14 @@ function Projects() {
                 <div className="flex  justify-center gap-2 mt-2">
                   {""}
 
-                  <Button className="animate-float" white>
-                    <a href={p.repo} target="_blank" rel="noopener noreferrer">
-                      Checkout project on GitHub
+                  <Button className={`animate-float ${!p.status ? "disabled" : ""}`} white>
+                    <a
+                      href={p.repo}
+                      className={`${!p.status ? "pointer-events-none text-gray-500" : ""}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Checkout live demo
                     </a>
                   </Button>
                 </div>
@@ -39,7 +44,7 @@ function Projects() {
           ))}
         </ul>
       </div>
-    </Section>
+    </div>
   );
 }
 

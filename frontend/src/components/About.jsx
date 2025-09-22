@@ -45,9 +45,9 @@ function About() {
   }, []);
 
   return (
-    <Section id="about">
-      <div className="flex flex-col lg:flex-row w-full items-center justify-center px-10 mt-5 pt-2">
-        <div className="max-w-xs ml-[2rem] mr-[2rem] pt-5">
+    <div className="min-h-screen mt-5" id="about">
+      <div className="flex flex-col lg:flex-row w-full items-center justify-center px-10">
+        <div className="max-w-xs mb-5">
           <img
             id="picture"
             src={profile2}
@@ -58,7 +58,7 @@ function About() {
         </div>
 
         <div
-          className="border-2 border-n-6 shadow-xl animate-shadow-pulse lg:p-2 lg:max-w-2xl max-w-xs w-full ml-[4rem] mr-[4rem] "
+          className="border-2 border-n-6 shadow-xl animate-shadow-pulse lg:p-2 lg:max-w-2xl max-w-xs w-full lg:ml-[4rem] lg:mr-[4rem] mx-2"
           ref={textRef}
         >
           <p
@@ -69,7 +69,7 @@ function About() {
           </p>
         </div>
       </div>
-    </Section>
+    </div>
   );
 }
 

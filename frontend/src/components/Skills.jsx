@@ -82,11 +82,11 @@ function Skills() {
   }, []);
 
   return (
-    <Section className="lg:h-[1000px] justify-center items-center mb-[5rem]" id="skills">
-      <div className="flex flex-col lg:flex-row lg:justify-between px-10 mt-5 mb-10 pt-10 lg:translate-y-[10rem] gap-10">
+    <div className="min-h-screen justify-center items-center" id="skills">
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:translate-y-[10rem] p-[2rem]">
         <div
           ref={hardSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] lg:p-[2rem] w-full max-w-2xl h-full"
+          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full"
         >
           <h2 className="text-blue-300 text-xl sm:text-2xl font-code text-center mb-6">
             Hard skills
@@ -143,7 +143,7 @@ function Skills() {
           </div>
         </div>
       </div>
-    </Section>
+    </div>
   );
 }
 

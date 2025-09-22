@@ -32,9 +32,9 @@ function Home() {
   });
 
   return (
-    <Section className="pt-[12rem]" id="home">
-      <div className="container mt-[5rem] mb-[15rem]">
-        <BackgroundBeamsWithCollision className="bg-n-8 h-full w-full">
+    <div id="home">
+      <BackgroundBeamsWithCollision className="bg-n-8 min-h-screen w-full mt-15">
+        <div className="container">
           <div className="relative z-1 text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] lg:mt-[6rem]">
             <h1 className="h1 mb-6">
               <span className="anim-span">Hi</span>
@@ -49,9 +49,9 @@ function Home() {
               <span className="anim-span">Check out my story below</span>
             </h1>
           </div>
-        </BackgroundBeamsWithCollision>
-      </div>
-    </Section>
+        </div>
+      </BackgroundBeamsWithCollision>
+    </div>
   );
 }
 
