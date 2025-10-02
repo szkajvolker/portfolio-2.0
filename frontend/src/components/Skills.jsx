@@ -81,16 +81,16 @@ function Skills() {
   }, []);
 
   return (
-    <div className="min-h-screen justify-center items-center" id="skills">
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:translate-y-[10rem] p-[2rem]">
+    <div className="flex min-h-screen justify-center items-center" id="skills">
+      <div className="flex flex-col lg:flex-row w-full lg:justify-between px-20">
         <div
           ref={hardSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full"
+          className="bg-black/30 backdrop-blur-md rounded-xl lg:px-[2rem] p-[1rem] w-full max-w-2xl h-full"
         >
           <h2 className="text-blue-300 text-xl sm:text-2xl font-code text-center mb-6">
             Hard skills
           </h2>
-          <div className="text-blue-300 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
+          <div className="text-blue-300 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 gap-3">
             {hardSkills.map((skill, i) => (
               <div key={i} className="flex flex-col">
                 <span className="text-center font-code">{skill.name}</span>
@@ -120,7 +120,7 @@ function Skills() {
           <h2 className="text-color-6 text-xl sm:text-2xl font-code text-center mb-6">
             Soft skills
           </h2>
-          <div className="text-color-6 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-3">
+          <div className="text-color-6 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 gap-3">
             {softSkills.map((skill, i) => (
               <div key={i} className="flex flex-col">
                 <span className="text-center font-code">{skill.name}</span>
@@ -136,7 +136,6 @@ function Skills() {
                     ></div>
                   </div>
                 </div>
-                <span className="text-center font-code">{skill.name}</span>
               </div>
             ))}
           </div>

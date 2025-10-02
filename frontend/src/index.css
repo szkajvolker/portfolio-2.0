@@ -24,10 +24,36 @@ html {
 @layer base {
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
-  body::-webkit-scrollbar {
-    display: none;
+
+  /* Egyedi scrollbar stílusok */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a2e;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    border: 1px solid #2a2a3e;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #7c8dff 0%, #8a5bb8 100%);
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6842a0 100%);
+  }
+
+  /* Firefox scrollbar */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #667eea #1a1a2e;
   }
 }
