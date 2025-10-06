@@ -18,19 +18,15 @@ function App() {
   }, [theme]);
 
   return (
-    <>
-      <TracingBeam>
-        <div className="overflow-x-hidden w-full">
-          <Navbar />
-          <Home theme={theme} />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
-      </TracingBeam>
-    </>
+    <div className="overflow-x-hidden w-full relative">
+      <Navbar />
+      <Home theme={theme} />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 export default App;

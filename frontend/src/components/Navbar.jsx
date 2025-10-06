@@ -30,18 +30,12 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full  shadow-xl shadow-gray-500  dark:shadow-purple-800 flex items-center justify-between p-2 ${
+      className={`fixed top-0 left-0 z-50 w-full  shadow-md shadow-black/60  dark:shadow-purple-800 flex items-center justify-between p-2 ${
         openNavigation ? "dark:bg-n-8 bg-n-1" : "dark:bg-n-8/90 bg-n-1 backdrop-blur-sm"
       } lg:px-5`}
     >
       <a className="block" href="#hero">
-        <img
-          src={logoIcon}
-          alt="icon"
-          width={60}
-          height={60}
-          className="rounded-xl hover:brightness-150"
-        />
+        <img src={logoIcon} alt="icon" width={60} height={60} className="rounded-xl" />
       </a>
 
       <div className="hidden lg:flex items-center gap-8">
@@ -49,7 +43,7 @@ const Navbar = () => {
           <a
             key={nav.id}
             href={nav.url}
-            className={`font-code text-md font-bold uppercase transition-colors hover:text-color-1 ${
+            className={`font-code text-lg font-bold uppercase dark:hover:text-color-1 hover:scale-110 hover:text-color-1 transition-all duration-300 ${
               nav.url === pathName.hash ? "text-color-1" : "text-n-3 dark:text-n-2"
             }`}
             onClick={handleClick}

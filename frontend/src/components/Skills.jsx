@@ -85,12 +85,12 @@ function Skills() {
       <div className="flex flex-col lg:flex-row w-full lg:justify-between px-20">
         <div
           ref={hardSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:px-[2rem] p-[1rem] w-full max-w-2xl h-full"
+          className="dark:bg-black/40 bg-black/10  dark:border-n-6 rounded-xl lg:px-[2rem] p-[1rem] w-full max-w-2xl h-full shadow-xl shadow-black/70 dark:shadow-purple-800/40"
         >
-          <h2 className="text-blue-300 text-xl sm:text-2xl font-code text-center mb-6">
+          <h2 className="dark:text-n-3 text-n-6 text-sm lg:text-2xl font-code font-bold text-center mb-6">
             Hard skills
           </h2>
-          <div className="text-blue-300 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 gap-3">
+          <div className="dark:text-n-3 text-n-5 font-bold font-code lg:text-xl text-sm transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 gap-3">
             {hardSkills.map((skill, i) => (
               <div key={i} className="flex flex-col">
                 <span className="text-center font-code">{skill.name}</span>
@@ -103,7 +103,7 @@ function Skills() {
                   <div className="border-4 border-n-6 w-full h-5 rounded-lg overflow-hidden bg-black/20">
                     <div
                       ref={(el) => (skillsRef.current[i] = el)}
-                      className="h-full bg-blue-300 transition-all duration-2000 ease-out"
+                      className="h-full dark:bg-n-3 bg-n-4 transition-all duration-2000 ease-out"
                       style={{ width: "0%" }}
                     ></div>
                   </div>
@@ -115,23 +115,23 @@ function Skills() {
 
         <div
           ref={softSkillsRef}
-          className="bg-black/30 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full"
+          className="dark:bg-black/40 bg-black/10  dark:border-n-6 backdrop-blur-md rounded-xl lg:m-[4rem] p-[2rem] w-full max-w-2xl h-full shadow-xl shadow-black/70 dark:shadow-purple-800/40"
         >
-          <h2 className="text-color-6 text-xl sm:text-2xl font-code text-center mb-6">
+          <h2 className="dark:text-n-3 text-n-6 text-sm lg:text-2xl font-code font-bold text-center mb-6">
             Soft skills
           </h2>
-          <div className="text-color-6 text-base sm:text-lg transition-colors duration-300 text-center md:text-left lg:grid lg:grid-cols-3 gap-3">
+          <div className="dark:text-n-3 text-n-5 font-bold font-code lg:text-xl text-sm transition-colors duration-300   text-center md:text-left lg:grid lg:grid-cols-3 gap-3">
             {softSkills.map((skill, i) => (
               <div key={i} className="flex flex-col">
                 <span className="text-center font-code">{skill.name}</span>
                 <div className="flex flex-row items-center">
-                  <span className="material-symbols-outlined text-xl w-8 h-8 mr-2 bg-gray-600 p-1 rounded-xl">
+                  <span className="material-symbols-outlined text-xl w-8 h-8 mr-2 bg-n-2 dark:bg-n-6 p-1 rounded-xl">
                     {icons[skill.id]}
                   </span>
-                  <div className="border-4 border-n-6 w-full h-5 rounded-lg overflow-hidden bg-black/20">
+                  <div className="border-4 border-n-6 dark:border-n-5 w-full h-5 rounded-lg overflow-hidden bg-black/10">
                     <div
                       ref={(el) => (skillsRef.current[hardSkills.length + i] = el)}
-                      className="h-full bg-color-6 transition-all duration-2000 ease-out"
+                      className="h-full bg-n-4 dark:bg-n-3 transition-all duration-2000 ease-out"
                       style={{ width: "0%" }}
                     ></div>
                   </div>

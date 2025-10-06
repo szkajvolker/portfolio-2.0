@@ -44,24 +44,24 @@ function About() {
   }, []);
 
   return (
-    <div className="min-h-screen mt-5" id="about">
-      <div className="flex flex-col lg:flex-row w-full items-center justify-center px-10">
-        <div className="max-w-xs mb-5">
+    <div className="flex min-h-screen justify-center items-center" id="about">
+      <div className="flex flex-col lg:flex-row mx-auto gap-10 items-center">
+        <div className="px-5 max-w-xs">
           <img
             id="picture"
             src={profile2}
-            className="rounded-xl"
+            className="rounded-xl border-2 border-black shadow-lg shadow-black max-w-xs m-5"
             alt="profilepic"
             ref={pictureRef}
           />
         </div>
 
         <div
-          className="border-2 border-n-6 shadow-xl animate-shadow-pulse lg:p-2 lg:max-w-2xl max-w-xs w-full lg:ml-[4rem] lg:mr-[4rem] mx-2"
+          className="border-2 border-n-6 shadow-xl animate-shadow-pulse max-w-2xl p-2 m-5"
           ref={textRef}
         >
           <p
-            className="text-lg md:text-xl lg:text-2xl text-n-3 bg-n-8 p-6 leading-relaxed font-code"
+            className="text-sm lg:text-xl dark:text-n-3 text-n-6 dark:bg-n-8 p-6 leading-relaxed font-code"
             id="text"
           >
             {aboutMe}

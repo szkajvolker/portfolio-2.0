@@ -1,12 +1,8 @@
-import Section from "./Section";
-
 function Footer() {
   return (
-    <Section className="!px-0 !py-10" crosses customPadding>
-      <div className="container flex justify-center w-full">
-        <p className="text-n-3">&copy; {new Date().getFullYear()} Szabó István | Author</p>
-      </div>
-    </Section>
+    <div className="flex justify-center w-full p-5 border-t-2 dark:border-n-6 border-n-2">
+      <p className="text-n-3">&copy; {new Date().getFullYear()} Szabó István | Author</p>
+    </div>
   );
 }
 

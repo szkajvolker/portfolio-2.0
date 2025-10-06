@@ -4,18 +4,23 @@ import Button from "./Button";
 
 function Projects() {
   return (
-    <div className="min-h-screen px-4" id="projects">
-      <div className="rounded-xl shadow-lg flex flex-col justify-center items-center mx-auto mb-10 max-w-md lg:max-w-4xl">
-        <div className="rounded-xl shadow-lg p-6 justify-center font-bold w-full">
-          <div className="border-2 border-color-1 text-color-3 flex flex-col items-center rounded-[10rem] mb-6">
-            <h2 className="text-2xl">Projects</h2>
-            <MdCode className="text-xl"></MdCode>
+    <div className="flex min-h-screen w-full items-center justify-center" id="projects">
+      <div className="rounded-xl shadow-xl dark:bg-black/40 bg-black/10 shadow-black/70 dark:shadow-purple-800/40 flex flex-col mb-10 max-w-3xl p-5">
+        <div className="rounded-xl shadow-lg p-6 justify-center font-code font-bold">
+          <div className="shadow-md dark:shadow-purple-800/70 shadow-black/30 dark:text-color-1 text-n-4 flex flex-row items-center rounded-[10rem] mb-6 justify-center">
+            <h2 className="lg:text-2xl text-sm ">Projects</h2>
+            <span>
+              <MdCode className="lg:text-2xl text-sm"></MdCode>
+            </span>
           </div>
         </div>
 
         <ul className="flex flex-col lg:grid lg:grid-cols-2 w-full gap-3 px-2">
           {projects.map((p) => (
-            <li key={p.id} className="bg-n-6 rounded-lg p-4 shadow hover:shadow-white/60">
+            <li
+              key={p.id}
+              className="dark:bg-n-6 bg-n-5 dark:text-n-3 text-n-2  font-bold font-code rounded-lg p-4 shadow-md shadow-black/60 hover:dark:shadow-purple-800/70"
+            >
               <div className="flex flex-col items-center">
                 <h3>{p.title}</h3> <span>Description: {p.description}</span>
               </div>

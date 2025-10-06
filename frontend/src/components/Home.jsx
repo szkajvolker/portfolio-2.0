@@ -36,7 +36,7 @@ function Home({ theme }) {
         const content = (
           <div className="w-full px-4 lg:px-20 max-w-6xl mx-auto flex items-center justify-center min-h-screen">
             <div className="text-center">
-              <h1 className="h1 mb-6">
+              <h1 className="lg:h1 md:h6 sm:h3 xl:h2 mb-6">
                 <span className="anim-span dark:text-n-1 text-n-4">Hi</span>
                 <span ref={waveRef} className="anim-span inline-block">
                   👋
@@ -59,9 +59,7 @@ function Home({ theme }) {
         const wrapperClass = "dark:bg-n-8 bg-n-1 min-h-screen w-full ml-10 mr-10";
 
         return theme === "dark" ? (
-          <BackgroundBeamsWithCollision className={wrapperClass}>
-            {content}
-          </BackgroundBeamsWithCollision>
+          <div className={wrapperClass}>{content}</div>
         ) : (
           <div className={wrapperClass}>{content}</div>
         );
