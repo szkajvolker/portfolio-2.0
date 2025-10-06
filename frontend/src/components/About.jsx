@@ -45,12 +45,12 @@ function About() {
 
   return (
     <div className="flex min-h-screen justify-center items-center" id="about">
-      <div className="flex flex-col lg:flex-row mx-auto gap-10 items-center">
-        <div className="px-5 max-w-xs">
+      <div className="flex flex-col lg:flex-row mx-auto gap-10 items-center justify-center">
+        <div className="max-w-xs">
           <img
             id="picture"
             src={profile2}
-            className="rounded-xl border-2 border-black shadow-lg shadow-black max-w-xs m-5"
+            className="rounded-xl border-2 border-black shadow-lg shadow-black max-w-xs"
             alt="profilepic"
             ref={pictureRef}
           />

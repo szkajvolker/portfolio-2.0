@@ -4,8 +4,8 @@ import Button from "./Button";
 
 function Projects() {
   return (
-    <div className="flex min-h-screen w-full items-center justify-center" id="projects">
-      <div className="rounded-xl shadow-xl dark:bg-black/40 bg-black/10 shadow-black/70 dark:shadow-purple-800/40 flex flex-col mb-10 max-w-3xl p-5">
+    <div className="flex min-h-screen w-full items-center justify-center p-10" id="projects">
+      <div className="rounded-xl shadow-xl dark:bg-black/40 bg-black/10 shadow-black/70 dark:shadow-purple-800/40 flex flex-col mb-10 max-w-3xl lg:p-10 p-2">
         <div className="rounded-xl shadow-lg p-6 justify-center font-code font-bold">
           <div className="shadow-md dark:shadow-purple-800/70 shadow-black/30 dark:text-color-1 text-n-4 flex flex-row items-center rounded-[10rem] mb-6 justify-center">
             <h2 className="lg:text-2xl text-sm ">Projects</h2>
