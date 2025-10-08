@@ -111,7 +111,7 @@ export const projects = [
     title: "Movie App",
     description:
       "A Movie App using TMDB as background database, features:searchBar,modal,trending movies based on search,using Appwrite as database",
-    repo: "https://moviesdatabase-app.netlify.app/",
+    repo: "https://moviestmdb-database-app.netlify.app/",
     status: true,
   },
   {
