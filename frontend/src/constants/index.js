@@ -119,8 +119,8 @@ export const projects = [
     title: "Games App",
     description:
       "A Games App using RAWG as background database, features:searchBar,modal,gamecards with their details",
-    repo: "work in progress",
-    status: false,
+    repo: "https://games-store-db.netlify.app/",
+    status: true,
   },
 ];
 
