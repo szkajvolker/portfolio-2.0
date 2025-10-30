@@ -85,7 +85,7 @@ function Skills() {
       <div className="flex flex-col lg:flex-row w-full lg:justify-between px-20">
         <div
           ref={hardSkillsRef}
-          className="dark:bg-black/40 bg-black/10  dark:border-n-6 rounded-xl lg:px-[2rem] p-[1rem] w-full max-w-2xl h-full shadow-xl shadow-black/70 dark:shadow-purple-800/40"
+          className="dark:bg-black/40 bg-black/10  dark:border-n-6 rounded-xl lg:px-[2rem] p-[1rem] w-full max-w-2xl h-full shadow-xl shadow-black/70 dark:shadow-purple-800/40 mb-5"
         >
           <h2 className="dark:text-n-3 text-n-6 text-sm lg:text-2xl font-code font-bold text-center mb-6">
             Hard skills

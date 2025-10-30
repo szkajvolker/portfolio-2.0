@@ -6,7 +6,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import { TracingBeam } from "./components/ui/TracingBeam";
 import { useThemeStore } from "./constants/themeStore";
 import { useEffect } from "react";
 
