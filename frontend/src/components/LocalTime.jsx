@@ -15,7 +15,7 @@ const LocalTime = () => {
     const minutes = time.getMinutes().toString().padStart(2, '0')
 
   return (
-    <div className="font-code text-sm border-2 border-n-6 rounded-lg px-3 py-1 dark:bg-black/40 bg-black/10 dark:text-n-2 text-n-3 shadow-lg shadow-black/60 dark:shadow-purple-800/40">
+    <div className="font-code text-sm px-2 py-1 bg-transparent shadow-md shadow-black/60 hover:dark:shadow-purple-800/70  rounded-2xl text-n-5 dark:text-n-3 bg-n-4 dark:bg-n-6">
         <span className="text-n-3">Local: </span>
         <span className="text-color-1">{hours}:{minutes}</span>
         {" "}
