@@ -137,7 +137,7 @@ export const contactIcons = [
   {
     id: 1,
     title: "LinkedIn",
-    url: "https://linkedin.com/in/istv%C3%A1n-szab%C3%B3-93985a374/",
+    url: "https://www.linkedin.com/in/istvan-szabo-junior-frontend-developer",
   },
   {
     id: 2,
