@@ -1,14 +1,17 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeamsWithCollision";
 
 function Home({ theme }) {
   const waveRef = useRef(null);
 
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.fromTo(".anim-span", { opacity: 0 }, { opacity: 1, stagger: 1, delay: 0.2 });
+    tl.fromTo(
+      ".anim-span",
+      { opacity: 0 },
+      { opacity: 1, stagger: 1, delay: 0.2 }
+    );
 
     tl.to(
       waveRef.current,
@@ -50,13 +53,16 @@ function Home({ theme }) {
                   Front End Developer
                 </span>
                 <br />
-                <span className="anim-span dark:text-n-1 text-n-4">Check out my story below</span>
+                <span className="anim-span dark:text-n-1 text-n-4">
+                  Check out my story below
+                </span>
               </h1>
             </div>
           </div>
         );
 
-        const wrapperClass = "dark:bg-n-8 bg-n-1 min-h-screen w-full ml-10 mr-10";
+        const wrapperClass =
+          "dark:bg-n-8 bg-n-1 min-h-screen w-full ml-10 mr-10";
 
         return theme === "dark" ? (
           <div className={wrapperClass}>{content}</div>
