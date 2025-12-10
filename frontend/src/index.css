@@ -2,14 +2,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --font-sora: "Sora", sans-serif;
+/* === THEME CONFIG === */
+@theme {
+  /* Screens */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Colors */
+  --color-color-1: #ac6aff;
+  --color-color-2: #ffc876;
+  --color-color-3: #ff776f;
+  --color-color-4: #7adb78;
+  --color-color-5: #858dff;
+  --color-color-6: #ff98e2;
+
+  --color-stroke-1: #26242c;
+
+  --color-n-1: #ffffff;
+  --color-n-2: #cac6dd;
+  --color-n-3: #ada8c3;
+  --color-n-4: #757185;
+  --color-n-5: #3f3a52;
+  --color-n-6: #252134;
+  --color-n-7: #15131d;
+  --color-n-8: #0e0c15;
+  --color-n-9: #474060;
+  --color-n-10: #43435c;
+  --color-n-11: #1b1b2e;
+  --color-n-12: #2e2a41;
+  --color-n-13: #6c7275;
+
+  /* Fonts */
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
+
+  /* Letter spacing */
+  --tracking-tagline: 0.15em;
+
+  /* Spacing */
+  --spacing-0\.25: 0.0625rem;
+  --spacing-7\.5: 1.875rem;
+  --spacing-15: 3.75rem;
+
+  /* Opacity */
+  --opacity-15: 0.15;
+
+  /* Z-index */
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 3;
+  --z-4: 4;
+  --z-5: 5;
+
+  /* Animations */
+  --animate-float: float 2s ease-in-out infinite;
+  --animate-shadow-pulse: shadow-pulse 2s infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes shadow-pulse {
+    0%,
+    100% {
+      box-shadow: 0 4px 24px 0 #2226, 0 1.5px 4px 0 #2226;
+    }
+    50% {
+      box-shadow: 0 8px 48px 0 #222a, 0 3px 8px 0 #222a;
+    }
+  }
+}
+
+/* === CUSTOM VARIANTS === */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* === BASE STYLES === */
+:root {
   color-scheme: dark;
 }
 
@@ -21,39 +101,192 @@ html {
   scroll-padding-top: 5rem;
 }
 
-@layer base {
-  body {
-    @apply font-sans dark:bg-n-8 bg-n-1 text-n-1 text-base;
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: var(--color-n-1);
+  color: var(--color-n-1);
+}
+
+.dark body {
+  background-color: var(--color-n-8);
+}
+
+/* Egyedi scrollbar stílusok */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+  border: 1px solid #2a2a3e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #7c8dff 0%, #8a5bb8 100%);
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6842a0 100%);
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #667eea #1a1a2e;
+}
+
+/* === UTILITIES === */
+@utility tap-highlight-color {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@utility bg-radial-gradient {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+@utility bg-conic-gradient {
+  background-image: conic-gradient(
+    from 225deg,
+    #ffc876,
+    #79fff7,
+    #9f53ff,
+    #ff98e2,
+    #ffc876
+  );
+}
+
+/* === COMPONENTS === */
+@utility container {
+  max-width: 77.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+
+  @media (min-width: 768px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
-  /* Egyedi scrollbar stílusok */
-  ::-webkit-scrollbar {
-    width: 8px;
+  @media (min-width: 1280px) {
+    max-width: 87.5rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
+
+@utility h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #1a1a2e;
-    border-radius: 4px;
+  @media (min-width: 1280px) {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+}
+
+@utility h2 {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 4px;
-    border: 1px solid #2a2a3e;
+  @media (min-width: 1280px) {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+}
+
+@utility h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+@utility h4 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+@utility h5 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@utility h6 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+@utility body-1 {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #7c8dff 0%, #8a5bb8 100%);
-    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+  @media (min-width: 1280px) {
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
+}
 
-  ::-webkit-scrollbar-thumb:active {
-    background: linear-gradient(135deg, #5a6fd8 0%, #6842a0 100%);
-  }
+@utility body-2 {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 
-  /* Firefox scrollbar */
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: #667eea #1a1a2e;
+  @media (min-width: 768px) {
+    font-size: 1rem;
   }
+}
+
+@utility caption {
+  font-size: 0.875rem;
+}
+
+@utility tagline {
+  font-family: var(--font-grotesk);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@utility quote {
+  font-family: var(--font-code);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+@utility button {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
