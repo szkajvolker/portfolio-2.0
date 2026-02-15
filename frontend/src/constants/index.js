@@ -82,7 +82,7 @@ export const projects = [
     id: 1,
     title: "Brainwave",
     description: "React practicing,learning new skills,different solutions",
-    repo: "https://szkajvolker.github.io/Brainwave/",
+    repo: "https://brainwavedemosite.netlify.app/",
     status: true,
   },
   {
@@ -103,7 +103,7 @@ export const projects = [
     id: 4,
     title: "Cocktail website",
     description: "A cocktail site using react as framework, practicing gsap",
-    repo: "https://szkajvolker.github.io/gsap_cocktails/",
+    repo: "https://cocktailsitedemo.netlify.app/",
     status: true,
   },
   {
@@ -111,7 +111,7 @@ export const projects = [
     title: "Movie App",
     description:
       "A Movie App using TMDB as background database, features:searchBar,modal,trending movies based on search,using Appwrite as database",
-    repo: "https://moviestmdb-database-app.netlify.app/",
+    repo: "https://moviesdatabase-app.netlify.app/",
     status: true,
   },
   {
